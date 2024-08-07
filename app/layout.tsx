@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Syne_Mono } from "next/font/google";
+import {Syne } from "next/font/google";
 import "./globals.css";
 
-const syne_mono = Syne_Mono({
+const syne= Syne({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -53,7 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={syne_mono.className}>{children}</body>
+      <body className={syne.className}>{children}</body>
     </html>
   );
 }

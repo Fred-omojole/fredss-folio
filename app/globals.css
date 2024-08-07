@@ -8,8 +8,18 @@
   --toned: #8d7c66;
 }
 
+*{
+  margin: 0;
+  padding:0;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: none;
+  
+}
+
+
 @layer base {
-  body {
+  body{
     @apply bg-primary;
   }
   h1 {
@@ -19,4 +29,9 @@
   h2 {
     @apply text-tertiary;
   }
+
+  p{
+    @apply text-toned;
+  }
 }
+
