@@ -1,10 +1,21 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { supermercado_one } from "@/app/fonts/font";
 
 import Link from "next/link";
 import base from "@/public/base.png";
-import { World } from "../components/ui/globe";
+// import { World } from "../components/ui/globe";
+
+import dynamic from "next/dynamic";
+
+const World = dynamic(
+  () => import("../components/ui/globe").then((m) => m.World),
+  {
+    ssr: false,
+  }
+);
+
 const Hero = () => {
   const colors = ["#000000", "#d7d0c7", "#ffffff"];
   const sampleArcs = [
@@ -432,7 +443,7 @@ const Hero = () => {
                   <path
                     d="M7 17L17 7M17 7H8M17 7V16"
                     stroke="#8d7c66"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   ></path>{" "}
@@ -470,15 +481,17 @@ const Hero = () => {
                 arcTime: 1000,
                 arcLength: 0.9,
                 rings: 1,
-                maxRings: 6,
+                maxRings: 3,
                 initialPosition: { lat: 22.3193, lng: 114.1694 },
                 autoRotate: true,
-                autoRotateSpeed: 0.5,
+                autoRotateSpeed: 1.0,
               }}
               data={sampleArcs}
             />
           </div>
-          <p className="capitalize text-end">Available for exciting new ventures </p>
+          <p className="capitalize text-end">
+            Available for exciting new ventures{" "}
+          </p>
         </div>
       </div>
     </section>
