@@ -2,10 +2,10 @@ export const blobityOptions = {
   licenseKey: "opensource",
   focusableElementsOffsetX: 8,
   focusableElementsOffsetY: 8,
-  color: "#8d7c66",
+  color: "#53351c",
   dotColor: "#8d7c66",
   invert: true,
-  focusableElements:
+  focusableElements:    
     "[data-blobity],[tabindex], a:not([data-no-blobity]), h3:not([data-no-blobity]), li:not([data-no-blobity]) ,button:not([data-no-blobity]), [data-blobity-tooltip]",
   font: "Roboto",
   fontSize: 16,

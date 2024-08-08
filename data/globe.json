@@ -10,9 +10,9 @@
         {
             "type": "Feature",
             "properties": {
-                "admin": "Afghanistan",
-                "name": "Afghanistan",
-                "continent": "Asia"
+                "admin": "Nigeria",
+                "name": "Nigeria",
+                "continent": "Africa"
             },
             "geometry": {
                 "type": "Polygon",
