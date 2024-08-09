@@ -382,14 +382,14 @@ const Hero = () => {
   ];
 
   return (
-    <section className="overflow-hidden w-auto h-screen">
+    <section className="overflow-hidden w-auto h-screen px-2 lg:px-0">
       {" "}
       <div
-        className={`${supermercado_one.className} flex items-center justify-between mt-4  text-xl p-2 text-toned font-semibold w-[95vw] mx-auto`}
+        className={` flex items-center justify-between mt-4  text-xl p-4 xl:p-2 text-toned font-semibold w-[95vw] mx-auto ${supermercado_one.className}`}
       >
-        <div tabIndex={0} className="rounded-full">
+        <div tabIndex={0}>
           <Image
-            className="rounded-full"
+            className=""
             src={base}
             alt="nav logo"
             width={50}
@@ -397,32 +397,34 @@ const Hero = () => {
           />
         </div>
 
-        <p className="capitalize ">freelance web designer & developer </p>
+        <p className=" hidden xl:block capitalize ">
+          freelance web designer & developer{" "}
+        </p>
 
-        <div>
+        <div className="hidden xl:block">
           <Link
             href="https://cal.com/freddy.dev/15min"
             target="blank"
             aria-label="BOOK A CALL"
           >
-            <button className="border-[2px] rounded-md px-4 py-2 border-secondary/45">
+            <button className=" border-[2px] rounded-md px-4 py-2 border-secondary/45">
               BOOK A CALL
             </button>
           </Link>
         </div>
       </div>
-      <div className="w-[80vw] h-[35vh] mx-auto mt-5  place-content-center text-center  ">
-        <div className=" uppercase font-bold text-9xl tracking-wide">
-          <h1>Fred-omojole </h1>
-          <h1>Omoyele</h1>
+      <div className="lg:w-[80vw] w-auto h-[35vh] mx-auto mt-5  place-content-center text-center  ">
+        <div className=" uppercase font-bold lg:font-extrabold text-5xl  md:text-6xl lg:text-7xl xl:text-8xl tracking-wide">
+          <h1 className="">Fred-omojole</h1>
+          <h1 className="">Omoyele</h1>
         </div>
       </div>
-      <div className=" mx-auto w-[90vw] h-[48vh] grid grid-cols-3 gap-4 mt-3  ">
-        <div className="flex flex-col justify-between ">
+      <div className="mx-auto flex flex-col   xl:w-[90vw] xl:h-[48vh] xl:grid xl:grid-cols-3 xl:gap-4 xl:mt-3  ">
+        <div className="xl:flex xl:flex-col xl:justify-between ">
           <div>
             {" "}
-            <div className="p-2.5"></div>
-            <div className="-ml-12">
+            <div className=" hidden xl:block xl:p-2.5 lg:p-2.5"></div>
+            <div className=" hidden xl:block xl:-ml-12 lg:-ml-12">
               {" "}
               <svg
                 width="60px"
@@ -451,7 +453,7 @@ const Hero = () => {
               </svg>
             </div>
           </div>
-          <div className="-leading-4 font-semibold tracking-wider text-xl">
+          <div className="text-center font-bold tracking-wider text-xl xl:text-left  xl:-leading-4 xl:font-semibold xl:tracking-wider xl:text-xl">
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
               eligendi quo soluta error sit earum vero amet! Porro optio odio
@@ -461,8 +463,8 @@ const Hero = () => {
           <div className="p-8"></div>
         </div>
         <div></div>
-        <div className="grid grid-cols-1 place-content-end">
-          <div className="w-full">
+        <div className="grid grid-cols-1 place-content-end ">
+          <div className=" w-full flex justify-items-end ">
             <World
               globeConfig={{
                 pointSize: 4,
@@ -489,7 +491,7 @@ const Hero = () => {
               data={sampleArcs}
             />
           </div>
-          <p className="capitalize text-end">
+          <p className="capitalize text-center lg:text-end xl:text-end">
             Available for exciting new ventures{" "}
           </p>
         </div>
