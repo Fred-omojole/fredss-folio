@@ -1,13 +1,11 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-import { supermercado_one } from "@/app/fonts/font";
 
-import Link from "next/link";
-import base from "@/public/base.png";
 // import { World } from "../components/ui/globe";
 
 import dynamic from "next/dynamic";
+import Header from "../header/header";
+// import Navmobile from "../navMobile/Navmobile";
 
 const World = dynamic(
   () => import("../components/ui/globe").then((m) => m.World),
@@ -383,36 +381,8 @@ const Hero = () => {
 
   return (
     <section className="overflow-hidden w-auto h-screen px-2 lg:px-0">
+      <Header/>
       {" "}
-      <div
-        className={` flex items-center justify-between mt-4  text-xl p-4 xl:p-2 text-toned font-semibold w-[95vw] mx-auto ${supermercado_one.className}`}
-      >
-        <div tabIndex={0}>
-          <Image
-            className=""
-            src={base}
-            alt="nav logo"
-            width={50}
-            height={50}
-          />
-        </div>
-
-        <p className=" hidden xl:block capitalize ">
-          freelance web designer & developer{" "}
-        </p>
-
-        <div className="hidden xl:block">
-          <Link
-            href="https://cal.com/freddy.dev/15min"
-            target="blank"
-            aria-label="BOOK A CALL"
-          >
-            <button className=" border-[2px] rounded-md px-4 py-2 border-secondary/45">
-              BOOK A CALL
-            </button>
-          </Link>
-        </div>
-      </div>
       <div className="lg:w-[80vw] w-auto h-[35vh] mx-auto mt-5  place-content-center text-center  ">
         <div className=" uppercase font-bold lg:font-extrabold text-5xl  md:text-6xl lg:text-7xl xl:text-8xl tracking-wide">
           <h1 className="">Fred-omojole</h1>

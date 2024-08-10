@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import {Syne } from "next/font/google";
+import { Syne } from "next/font/google";
 import "./globals.css";
+import { Providers } from "./providers";
 
-const syne= Syne({
+const syne = Syne({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -53,7 +54,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={syne.className}>{children}</body>
+      <body className={syne.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
