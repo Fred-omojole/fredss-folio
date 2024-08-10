@@ -381,8 +381,7 @@ const Hero = () => {
 
   return (
     <section className="overflow-hidden w-auto h-screen px-2 lg:px-0">
-      <Header/>
-      {" "}
+      <Header />{" "}
       <div className="lg:w-[80vw] w-auto h-[35vh] mx-auto mt-5  place-content-center text-center  ">
         <div className=" uppercase font-bold lg:font-extrabold text-5xl  md:text-6xl lg:text-7xl xl:text-8xl tracking-wide">
           <h1 className="">Fred-omojole</h1>
@@ -404,11 +403,11 @@ const Hero = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 transform="rotate(90)"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}
@@ -416,8 +415,8 @@ const Hero = () => {
                     d="M7 17L17 7M17 7H8M17 7V16"
                     stroke="#8d7c66"
                     strokeWidth="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>{" "}
                 </g>
               </svg>
