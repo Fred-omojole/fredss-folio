@@ -16,9 +16,9 @@ const config: Config = {
         "light-brown": "var(--lightBrown)",
         toned: "var(--toned)",
       },
-      fontFamily: {
-        supermercado: ['"Supermercado One"', "sans-serif"],
-      },
+      // fontFamily: {
+      //   supermercado: ["Supermercado_One"],
+      // },
     },
   },
   plugins: [nextui()],
