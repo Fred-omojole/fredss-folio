@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import Link from "next/link";
 import base from "@/public/base.png";
-import NavMobile from "../navMobile/NavMobile";
+import NavMobile from "@/app/navMobile/NavMobile";
 
 const Header = () => {
   return (
