@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { supermercado_one } from "@/app/fonts/font";
+// import { supermercado_one } from "@/app/fonts/font";
 
 import Link from "next/link";
 import base from "@/public/base.png";
