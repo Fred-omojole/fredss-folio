@@ -2,7 +2,7 @@ import React from "react";
 import { RiMenu2Fill } from "react-icons/ri";
 import { RiCloseLargeFill } from "react-icons/ri";
 
-const Navmobile = () => {
+const NavMobile = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const handleClick = () => {
     setIsOpen((open) => !open);
@@ -27,4 +27,4 @@ const Navmobile = () => {
   );
 };
 
-export default Navmobile;
+export default NavMobile;

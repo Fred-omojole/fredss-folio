@@ -4,17 +4,17 @@ import { supermercado_one } from "@/app/fonts/font";
 
 import Link from "next/link";
 import base from "@/public/base.png";
-import Navmobile from "../navMobile/NavMobile";
+import NavMobile from "../navMobile/NavMobile";
 
 const Header = () => {
   return (
     <div
-      className={` flex items-center justify-between just text-xl mt-4 p-4 xl:p-2 text-toned font-semibold w-[95vw] mx-auto ${supermercado_one.className}`}
+      className={` flex items-center justify-between just text-xl mt-4 p-4 xl:p-2 text-toned font-semibold w-[95vw] mx-auto font-supermercado`}
     >
       <div tabIndex={0}>
         <Image className="" src={base} alt="nav logo" width={50} height={50} />
       </div>
-      <Navmobile />
+      <NavMobile />
 
       <p className=" hidden xl:block capitalize ">
         freelance web designer & developer{" "}
